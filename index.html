@@ -1,1 +1,52 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog App</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+</head>
+
+<body>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <div class="header item"><i class="write square icon"></i>Blog Site</div>
+            <a href="/" class="item">Home</a>
+            <a href="/blogs/new" class="item">New Blog</a>
+        </div>
+    </div>
+    <div class="ui main text container">
+        <div class="ui huge header">Blogs</div>
+        <div class="ui top attached segment">
+            <div class="ui relaxed divided items">
+                <div class="item">
+                    <div class="ui medium image">
+                        <img src="<%= blog.image %>">
+                    </div>
+                    <div class="content">
+                        <a href="/blogs/<%= blog._id %>">
+                        </a>
+                        <div class="meta">
+                            <span>Technologies Used: html, paperjs, howlerjs</span>
+                        </div>
+                        <div class="description">
+                            <p>Some Nice Description...</p>
+                        </div>
+                        <div class="extra">
+                            <a class="ui floated blue button" href="/patatap-clone">View Patatap Clone<i class="right chevron icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="ui linkedin button" href="https://linkedin.com/in/efrain-a-rivas-ii-31190171"><i class="linkedin icon"></i>LinkedIn</a>
+        <a class="ui black button" href="https://github.com/rainrivas"><i class="github icon st"></i>Github</a>
+        <a class="ui circular linkedin icon button" href="https://linkedin.com/in/efrain-a-rivas-ii-31190171"><i class="linkedin icon"></i></a>
+        <a href="https://github.com/rainrivas" class="ui circular icon"><img src="assets/GitHub-Logos/GitHub-Mark/PNG/GitHub-Mark-32px.png"></a>
+        <button class="ui linkedin button">
+            <i class="linkedin icon"></i>LinkedInBROKENBUTTON
+        </button>
+    </div>
+</body>
+
+</html>
