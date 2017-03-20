@@ -2,30 +2,38 @@
 <html>
 
 <head>
-    <title>Blog App</title>
+    <title>Github Portfolio</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 </head>
 
 <body>
-    <div class="ui fixed inverted menu">
+    <div class="ui inverted fixed menu">
         <div class="ui container">
-            <div class="header item"><i class="write square icon"></i>Blog Site</div>
+            <div class="header item"><i class="big code icon"></i>Project Portfolio</div>
             <a href="/" class="item">Home</a>
-            <a href="/blogs/new" class="item">New Blog</a>
+            <!-- <a href="/blogs/new" class="item">New Blog</a> -->
+        </div>
+        <div class="right item">
+            <span class="item"><button class="ui circular linkedin icon button">
+                <i class="linkedin icon"></i>
+                <!-- <a href="https://linkedin.com/in/efrain-a-rivas-ii-31190171"><i class="linkedin icon"></i> LinkedIn</a> -->
+            </button></span>
+            <span class="item"><a href="https://github.com/rainrivas"><img src="assets/GitHub-Logos/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" class="ui circular inline image"></a></span>
+            <span class="item"><a class="ui inverted button">ContactMe</a></span>
         </div>
     </div>
     <div class="ui main text container">
-        <div class="ui huge header">Blogs</div>
+        <div class="ui huge header">Projects</div>
         <div class="ui top attached segment">
             <div class="ui relaxed divided items">
                 <div class="item">
-                    <div class="ui medium image">
-                        <img src="<%= blog.image %>">
-                    </div>
+                    <!-- <div class="ui medium image"> -->
+                    <!-- <img src=""> -->
+                    <!-- <i class="huge code icon"></i> -->
+                    <!-- </div> -->
                     <div class="content">
-                        <a href="/blogs/<%= blog._id %>">
-                        </a>
+                        <h2 class="ui header"><a href="/patatap-clone">Patatap-Clone</a></h2>
                         <div class="meta">
                             <span>Technologies Used: html, paperjs, howlerjs</span>
                         </div>
@@ -33,20 +41,34 @@
                             <p>Some Nice Description...</p>
                         </div>
                         <div class="extra">
-                            <a class="ui floated blue button" href="/patatap-clone">View Patatap Clone<i class="right chevron icon"></i></a>
+                            <a class="ui floated blue button" href="/patatap-clone">View The Source<i class="right chevron icon"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="ui linkedin button" href="https://linkedin.com/in/efrain-a-rivas-ii-31190171"><i class="linkedin icon"></i>LinkedIn</a>
-        <a class="ui black button" href="https://github.com/rainrivas"><i class="github icon st"></i>Github</a>
-        <a class="ui circular linkedin icon button" href="https://linkedin.com/in/efrain-a-rivas-ii-31190171"><i class="linkedin icon"></i></a>
-        <a href="https://github.com/rainrivas" class="ui circular icon"><img src="assets/GitHub-Logos/GitHub-Mark/PNG/GitHub-Mark-32px.png"></a>
-        <button class="ui linkedin button">
-            <i class="linkedin icon"></i>LinkedInBROKENBUTTON
-        </button>
+        <!-- <i class="large circular inverted github icon link"></i> -->
     </div>
+    <!-- End Main Containter -->
+    <div class="footer">
+        <div class="ui container">
+            <div class="ui section divider"></div>
+            <!-- right side footer -->
+            <div class="ui small right floated horizontal list">
+                <a class="item" href="https://github.com/rainrivas"><i class="big black github mark icon"></i></a>
+                <a class="item" href="https://linkedin.com/in/efrain-a-rivas-ii-31190171"><i class="circular inverted blue linkedin icon"></i></a>
+            </div>
+            <!-- left side footer -->
+            <i class="large meh icon"></i>
+            <div class="ui small horizontal list">
+                <div class="disabled item" href="#">&copy; 2017 Copy Right Place Holder</div>
+                <a class="item" href="#">Contact</a>
+                <a class="item" href="#">Help</a>
+            </div>
+        </div>
+    </div>
+    <!-- JS Includes -->
+    <script src="javascript/library/jquery.min.js"></script>
 </body>
 
 </html>
