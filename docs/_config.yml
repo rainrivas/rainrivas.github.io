@@ -1,0 +1,58 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Countdown
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+utc: "2020-07-01 0:00:00 -0500" #Required. The start time of the event. Best to use UTC format, but may work in other date formats too.
+name: "Sample Countdown" #Required. The human-readable name of the event
+logo: ../assets/GitHub-Logos/GitHub-Mark/PNG/GitHub-Mark-32px.png #Required. logo for the event. replace this logo in the project or add a new file and change the value of this variable
+description: "My event will be so awesome. Check this
+site to see how much longer is left until. Get excited!" #Required. short description of the event. this is used in the preview when the link is shared on facebook
+externalLink: "http://google.com" #Required. link to the main event page. this could be a webpage, a facebook event, an eventbrite page, where ever the main webpage is for your event
+# url: "http://countdown.yourdomain.com" #(Optional) the full URL for this countdown page. This is neccesary for facebook share previews
+facebookEventLink: #(Optional) if you have a facebook event, put the link here and we'll add a "RSVP on facebook" link at the bottom.
+hashtag: "" #(Optional) hashtag for the event, example "#hashtag". must be in quotes.
+colors: #(Optional)
+  background: "#FFF" #color of the background of the page
+  primary: "#3FBFBC" #primary color for the page
+  secondary: "#EE4823" #secondary color for the page
+  textcolor: "#FFF" #color of the text, which is overlayed on the primary color
+fontfamily: "'Open Sans', sans-serif" #optional
